@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+body, dd, dt, h1, h2, h3, h4, h5, h6, li, p, ul {
+    margin: 0;
+    padding: 0
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: 400
+}
+
+dd, li, ul {
+    list-style: none
+}
+
+img {
+    border: none;
+    outline: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    color: inherit
+}
+
+input {
+    outline: none
+}
+
+em {
+    font-style: normal
+}
+
+html {
+    height: 100%
+}
+
+body {
+    position: relative;
+    font: 12px/1.5 microsoft yahei, arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: #f8f8f8;
+    min-width: 1200px;
+    color: #323232;
+    min-height: 100%;
+    box-sizing: border-box
+}
+
+button, input, select, textarea {
+    font-size: 1em;
+    font-family: inherit
+}
