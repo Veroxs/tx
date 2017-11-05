@@ -159,7 +159,7 @@
     display: inline-block;
     margin-right: 8px;
     vertical-align: bottom;
-    background-image: url('../other/u4lVHciAH9CkjAJAtsKiEQaYtQLRlf0AGXACiB1QNEMDDu4a23wGds9MuMFI4AQoEO2BjH2EkjW2JAHEziBNB4E4AxTQJGgGxVw+EB+A2TobiH2B+CmRWRmkdgp6NG4HYh0gbgPiz1g0gsQ6gFgLiLciJyRstoBKnVggToDyQSXUQiD+iK4QIMAAuF+GgO5OBxMAAAAASUVORK5CYII=');
+    background-image: url('../images/sj.png');
     background-repeat: no-repeat
 }
 
@@ -432,7 +432,7 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0;
+   /* opacity: 0;*/
     overflow: hidden
 }
 
@@ -1308,4 +1308,46 @@ a:hover {
     border-left-width: 1px
 }
 
-/*  |xGv00|d2c151f4965c80c0bf944d21309e681d */
+/*swiper*/
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-container .swiper-pagination .swiper-pagination-bullet{
+    display: inline-block;
+    vertical-align: top;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 1;
+}
+.swiper-container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color: #de373e;
+}
+
+

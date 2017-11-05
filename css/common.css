@@ -705,7 +705,7 @@
     display: inline-block;
     width: 47px;
     height: 54px;
-    background-image: url(../images/sprite-f980a6bf4a.mod.footer-prom.png);
+    background-image: url(../images/footer-prom-list-icon.png);
     background-position: 0 0
 }
 
@@ -714,7 +714,7 @@
     display: inline-block;
     width: 43px;
     height: 47px;
-    background-image: url(../images/sprite-f980a6bf4a.mod.footer-prom.png);
+    background-image: url(../images/footer-prom-list-icon.png);
     background-position: -51px -58px
 }
 
@@ -723,7 +723,7 @@
     display: inline-block;
     width: 47px;
     height: 47px;
-    background-image: url(../images/sprite-f980a6bf4a.mod.footer-prom.png);
+    background-image: url(../images/footer-prom-list-icon.png);
     background-position: -102px 0
 }
 
@@ -734,7 +734,7 @@
 }
 
 .mod-footer-prom.dark-theme .prom-icon.prom-icon-qt:before {
-    background-image: url(../images/sprite-f980a6bf4a.mod.footer-prom.png);
+    background-image: url(../images/footer-prom-list-icon.png);
     background-position: -51px 0
 }
 
@@ -743,12 +743,12 @@
     display: inline-block;
     width: 43px;
     height: 46px;
-    background-image: url(../images/sprite-f980a6bf4a.mod.footer-prom.png);
+    background-image: url(../images/footer-prom-list-icon.png);
     background-position: -98px -58px
 }
 
 .mod-footer-prom.dark-theme .prom-icon.prom-icon-gt:before {
-    background-image: url(../images/sprite-f980a6bf4a.mod.footer-prom.png);
+    background-image: url(../images/footer-prom-list-icon.png);
     background-position: 0 -58px
 }
 
@@ -826,7 +826,7 @@
     height: 17px;
     margin-right: 10px;
     vertical-align: text-bottom;
-    background-image: url('../other/T2TOitp7RZyjCk5dvBBl7RqD2x5u7tEYzpswrP2MckBrSUxTpRCzrb5keAAQBjPUeHEKtsDgAAAABJRU5ErkJggg==');
+    background-image: url('../images/footer-contact-qq-icon.png');
     background-repeat: no-repeat
 }
 
@@ -837,7 +837,7 @@
     height: 14px;
     margin-right: 10px;
     vertical-align: middle;
-    background-image: url('../other/6uHga4rrvkRWOCwPptmh2UM2ZLXdd7sS3mLGWY5Y9j4FGAAgdE9j4WTA2cAAAAASUVORK5CYII=');
+    background-image: url('../images/footer-contact-email-icon.png');
     background-repeat: no-repeat
 }
 
@@ -903,12 +903,12 @@
     width: 26px;
     height: 26px;
     margin-top: 11px;
-    background-image: url('../other/z3wMQAqiEAUgkMAC1gQl2oAEGMOKAQT2U+P8ZSgAAtIY4pDA2rPkAAAAASUVORK5CYII=');
+    background-image: url('../images/ewm-icon.png');
     background-repeat: no-repeat
 }
 
 .fixed-content .code:hover:before {
-    background-image: url('../other/xYhD9SpfQmprwbEqX3f1JCgG4+AggwAES9MwwtHvcWAAAAAElFTkSuQmCC');
+    background-image: url('../images/ewm-icon-cur.png');
     background-repeat: no-repeat
 }
 
@@ -919,12 +919,12 @@
     width: 26px;
     height: 16px;
     margin-top: 16px;
-    background-image: url('../other/48411WI9ugE3rywFwQPN9rYAAAAASUVORK5CYII=');
+    background-image: url('../images/back-top-icon.png');
     background-repeat: no-repeat
 }
 
 .fixed-content .backtop:hover:before {
-    background-image: url('../other/hsZNukCaWBjnkfbPwIMAM5uailHPeqOAAAAAElFTkSuQmCC');
+    background-image: url('../images/back-top-icon-cur.png');
     background-repeat: no-repeat
 }
 
@@ -939,12 +939,12 @@
     content: '';
     width: 29px;
     height: 24px;
-    background-image: url('../other/JiVqSgrqewlRbCHojZHmExqPNbgAEAk9Ng2q7uJhMAAAAASUVORK5CYII=');
+    background-image: url('../images/edit-icon.png');
     background-repeat: no-repeat
 }
 
 .fixed-content .feedback:hover:before {
-    background-image: url('../other/NtwAAAABJRU5ErkJggg==');
+    background-image: url('../images/edit-icon-cur.png');
     background-repeat: no-repeat
 }
 
@@ -1016,7 +1016,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url('../other/UAAAAASUVORK5CYII=');
+    background-image: url('../images/qq-icon.png');
     background-repeat: no-repeat
 }
 
@@ -1046,7 +1046,8 @@
     position: relative;
     min-height: 113px;
     padding: 35px 20px 12px 146px;
-    font-size: 16px
+    font-size: 16px;
+    min-width: 140px;
 }
 
 .fixed-content .code-layer .tab-content img {
