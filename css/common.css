@@ -1147,7 +1147,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url('../other/UAAAAASUVORK5CYII=');
+    background-image: url('../images/icon-qq.png');
     background-repeat: no-repeat
 }
 
@@ -1298,12 +1298,12 @@
     position: relative;
     vertical-align: top;
     cursor: pointer;
-    background-image: url('../other/+3tavDAAAAFUlEQVR42mJgwACMKGC4C6ABgAADAGkwAMWGfVYlAAAAAElFTkSuQmCC');
+    background-image: url('../images/chk.png');
     background-repeat: no-repeat
 }
 
 .ui-checkbox-rect.checked {
-    background-image: url('../other/wAAAAASUVORK5CYII=');
+    background-image: url('../images/chked.png');
     background-repeat: no-repeat
 }
 
