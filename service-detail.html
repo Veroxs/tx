@@ -1,24 +1,27 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>服务详情</title>
-    <meta name="keywords" content="企业服务 创业服务">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="UTF-8"/>
+    <title>创业问诊（公司注册咨询） - 服务详情</title>
+    <meta name="keywords" content="创业问诊（公司注册咨询） 企业服务 创业服务"/>
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <!--[if lt IE 9]>
     <script src="js/es5-shim.min.js"></script>
     <script src="js/es5-sham.min.js"></script>
     <script src="js/jquery-1.12.0.min.js"></script>
     <script src="js/selectivizr-min.js"></script>
     <![endif]-->
-    <script src="js/jquery-1.9.1.min.js"></script>
-    <link rel="stylesheet" href="css/base.css"/>
     <link rel="stylesheet" href="css/common.css"/>
     <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/service-detail.css">
+    <link rel="stylesheet" href="css/page-service-detail.css">
 </head>
 <body>
+<script>
+    document.domain = 'qq.com';
+    var hasLogin = '1';
+    var hasReg = '1';
+</script>
 <div class="mod-topbar" id="jmod_topbar">
     <div class="layout clearfix">
         <div class="mod-topbar-links">
@@ -271,348 +274,27 @@
         <a href="" class="mod-nav-item">商家列表</a>
     </div>
 </div>
-<div class="mod-crumb jmod-breadcrumb">
-    <a href="">首页</a> &gt;
-    <a href="">财税服务</a> &gt; <p class="crumb-name">代理记账</p> &gt;
-    <a href="">小规模记账</a> &gt; <p class="crumb-name">服务详情</p>
-</div>
-<div class="jmod-tips">
-    <div class="mod-tips mt hidden">
-        <span class="close jmod_close_tips"></span>
-    </div>
-</div>
+<div class="mod-crumb jmod-breadcrumb"></div>
+<div class="jmod-tips"></div>
 <div class="service-detail-header">
     <div class="layout">
         <div class="service-detail-banner">
             <div class="leftside-content">
-                <div class="top-wrap jmod-active-price">
-                    <div class="service-title">
-                        小规模记账（含国地税按时申报+做公司电子建账+公司手工账本+公司年报年审+财税指导）
-                    </div>
-                    <!-- normal -->
-                    <div class="price-board">
-                        <div class="price-board-b is-normal">
-                            <div class="price-board-spr">价格
-                                <span class="price-board-p jmod_price_text">
-                            <small style="font-size:20px;">¥</small>10.00 - <small style="font-size:20px;">¥</small>2388.00
-                        </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom-wrap jmod-select-ctrl">
-                    <div class="service-rest">
-                        <div class="service-region">
-                            <span class="rest-title">服务地区</span>
-                            <dl class="m-select" id="AreaSelector">
-                                <dt>
-                                    <label class="ui-checkbox-text"></label><span class="ui-address-tri"><span class="ui-address-tri-icon"></span></span></dt>
-                                <dd class="region" style="height:210px;">
-                                    <input type="hidden" name="" value="">
-                                    <ul class="tab"></ul>
-                                    <div class="tab-con clearfix"></div>
-                                </dd>
-                            </dl>
-                        </div>
-                        <div class="service-period jmod_select_period">
-                            <span class="rest-title">服务期限</span>
-                            <span class="ui-tag mr" _period_id="1">一次性</span>
-                            <span class="ui-tag mr" _period_id="4">半年</span>
-                            <span class="ui-tag mr" _period_id="5">一年</span>
-                            <span class="ui-tag mr" _period_id="2">1个月</span>
-                        </div>
-                    </div>
-                    <a href="javascript:;" class="ui-button ui-button-primary ui-button-suc jmod_buy_btn">立即购买</a>
-                    <div class="service-grantee">
-                        <span class="grantee-title">服务保障</span>
-                        <div class="grantee-item icon-at-front ontime-grantee">承诺按时按质保证完成</div>
-                    </div>
-                </div>
+                <div class="top-wrap jmod-active-price"></div>
+                <div class="bottom-wrap jmod-select-ctrl"></div>
             </div>
-            <div class="rightside-content jmod-corp-info">
-                <div class="comp-represt">
-                    <div class="logo-wrap">
-                        <a href="">
-                            <img src="images/jy-icon.png" alt="精益求精集团"></a>
-                    </div>
-                    <div class="comp-info">
-                        <div>
-                            <a class="comp-name" style="max-width:7em;display:inline-block;vertical-align:top;"
-                               title="精益求精集团" href="">精益求精集团</a>
-                            <a href="" target="_blank" class="lv">Lv2</a>
-                        </div>
-                        <p class="weak deal-amount">销量&nbsp;<span class="num">572</span></p>
-                        <p class="weak deal-amount">咨询量&nbsp;<span class="num">1751</span></p>
-                        <a target="_blank" href=""
-                           class="ui-button ui-button-primary ui-button-sm jmod-wpa-qq jmod-consult-stat" id="wpaId0">QQ咨询</a>
-                    </div>
-                </div>
-                <div class="comp-rating-wrap">
-                    <ul class="comp-rating">
-                        <li class="comp-rating-item">
-                            <h4 class="comp-rating-title">完成质量</h4>
-                            <div class="comp-rating-score mod-emph" style="">5.0分</div>
-                        </li>
-                        <li class="comp-rating-item">
-                            <h4 class="comp-rating-title">服务态度</h4>
-                            <div class="comp-rating-score mod-emph" style="">5.0分</div>
-                        </li>
-                        <li class="comp-rating-item">
-                            <h4 class="comp-rating-title">工作速度</h4>
-                            <div class="comp-rating-score mod-emph" style="">5.0分</div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="mod-tab-panel jmod_company_wrap">
-                    <div class="tab-item cur">
-                        <span class="item-in">公司简介</span>
-                    </div>
-                    <div class="tab-item">
-                        <span class="item-in">业务介绍</span>
-                    </div>
-                </div>
-                <div class="mod-tab-content jmod_company_content_wrap">
-                    <div class="tab-content" style="height:200px">
-                        <p>精益求精财税—为创业者而生！秉承“待人以诚、持事以信、精益求精”的服务宗旨迎合“大众创业，万众创新”的时代浪潮，
-                            互联网+工商专利行业领跑者，专注于企业个性化一条龙服务。更多免费公益活动等您来体验</p>
-                    </div>
-                    <div class="tab-content hidden" style="height:200px">
-                        <p>
-                            代理公司注册工商执照、商标专利、记账报税、一般纳税人申请、商务秘书地址挂靠、；食品流通许可证和各类批文、资质审批、国家高新企业培育及申请！精益求精集团拥有逾百人的成熟、专业、激情的资深运营管理团队！</p>
-                    </div>
-                </div>
-            </div>
+            <div class="rightside-content jmod-corp-info"></div>
         </div>
         <div class="service-detail-body">
             <div class="layout clearfix">
-                <div class="leftside-content jmod-sku-detail">
-                    <div class="mod-head mod-head-small">
-                        <h3 class="mod-title-small">服务内容详情</h3>
-                    </div>
-                    <div class="service-detail-cont">
-                        <div class="service-detail-title">服务详细介绍</div>
-                        <div class="appendix">
-                            <div class="content jmod_detail_wrap"><h2 class="title marB15"
-                                                                      style="margin-top: 40px; margin-bottom: 15px; padding: 0px; font-size: 24px; font-weight: 400; font-family: arial, &#39;Microsoft Yahei&#39;, &#39;Hiragino Sans GB&#39;, sans-serif; line-height: 20px; box-sizing: border-box; border: none; outline: none; color: rgb(86, 86, 86); text-align: center; background-color: rgb(244, 244, 244);">
-                                小规模公司记账报税（深圳为例）</h2>
-                                <p class="mdp"
-                                   style="margin-bottom: 18px; padding: 0px; font-family: arial, &#39;Microsoft Yahei&#39;, &#39;Hiragino Sans GB&#39;, sans-serif; font-size: 14px; box-sizing: border-box; border: none; outline: none; text-align: center; color: rgb(86, 86, 86); line-height: 1.6; background-color: rgb(244, 244, 244);">
-                                    <span style="box-sizing: border-box; padding: 0px; border: none; outline: none; line-height: 22.4px;">按年服务含财务核算、税务申报、出具报表，精益求精选择经验丰富会计为客户提供服务</span>
-                                </p>
-                                <table style="border-spacing: 0px; color: rgb(140, 140, 140); font-family: arial, &#39;Microsoft Yahei&#39;, &#39;Hiragino Sans GB&#39;, sans-serif; font-size: 14px; line-height: 20px; box-sizing: border-box; padding: 0px; margin-right: auto; margin-left: auto; border: none; outline: none; background-color: rgb(244, 244, 244);">
-                                    <tbody style="box-sizing: border-box; padding: 0px; border: none; outline: none;">
-                                    <tr style="box-sizing: border-box; padding: 0px; border: none; outline: none;">
-                                        <td class="letd"
-                                            style="box-sizing: border-box; padding: 0px; border-color: rgb(190, 190, 190); outline: none; text-align: center; color: rgb(104, 102, 103); line-height: 60px; width: 160px; background: rgb(248, 248, 248);">
-                                            服务内容
-                                        </td>
-                                        <td class="ritd"
-                                            style="box-sizing: border-box; padding: 0px; border-color: rgb(190, 190, 190); outline: none; color: rgb(104, 102, 103); line-height: 60px; width: 679px;">
-                                            <div class="marpaddiv"
-                                                 style="max-width: 100%; box-sizing: border-box; padding: 0px 0px 0px 24px; border: none; outline: none;">
-                                                <div style="line-height: 21px; outline: none; color: rgb(0, 0, 0); font-family: &#39;Microsoft YaHei&#39;; widows: auto;">
-                                                    <div style="line-height: 1.5; outline: none;">1：税务申报（月报，季报，年报）</div>
-                                                    <div style="line-height: 1.5; outline: none;">
-                                                        2：建立电子账簿、编制会计科目（单据，凭证可快递，快递费客户自己承担)
-                                                    </div>
-                                                    <div style="line-height: 1.5; outline: none;">
-                                                        3：提供代开发票服务（如果需要代领发票费用另计） &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-                                                    </div>
-                                                    <div style="line-height: 1.5; outline: none;">
-                                                        4：每年免费年审、工商年报服务（不需要出具报告的前提）
-                                                    </div>
-                                                    <div style="line-height: 1.5; outline: none;">5：国地税登记报到</div>
-                                                    <div style="line-height: 1.5; outline: none;">6：免费提供财税咨询</div>
-                                                    <div style="line-height: 1.5; outline: none;">
-                                                        注：按年服务会员以上内容全包，每月安排沟通反馈一对一客服
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr style="box-sizing: border-box; padding: 0px; border: none; outline: none;">
-                                        <td class="letd"
-                                            style="box-sizing: border-box; padding: 0px; border-color: rgb(190, 190, 190); outline: none; text-align: center; color: rgb(104, 102, 103); line-height: 60px; width: 160px; background: rgb(248, 248, 248);">
-                                            服务地区
-                                        </td>
-                                        <td class="ritd"
-                                            style="box-sizing: border-box; padding: 0px; border-color: rgb(190, 190, 190); outline: none; color: rgb(104, 102, 103); line-height: 60px; width: 679px;">
-                                            <div class="marpaddiv"
-                                                 style="max-width: 100%; box-sizing: border-box; padding: 0px 0px 0px 24px; border: none; outline: none;">
-                                                <p class="marpad"
-                                                   style="padding: 0px; box-sizing: border-box; border: none; outline: none;">
-                                                    广州、深圳</p></div>
-                                        </td>
-                                    </tr>
-                                    <tr style="box-sizing: border-box; padding: 0px; border: none; outline: none;">
-                                        <td class="letd"
-                                            style="box-sizing: border-box; padding: 0px; border-color: rgb(190, 190, 190); outline: none; text-align: center; color: rgb(104, 102, 103); line-height: 60px; width: 160px; background: rgb(248, 248, 248);">
-                                            费用说明
-                                        </td>
-                                        <td class="ritd"
-                                            style="box-sizing: border-box; padding: 0px; border-color: rgb(190, 190, 190); outline: none; color: rgb(104, 102, 103); line-height: 60px; width: 679px;">
-                                            <div class="plewdiv"
-                                                 style="max-width: 100%; box-sizing: border-box; padding: 10px 0px 10px 24px; border: none; outline: none;">
-                                                <p class="plew"
-                                                   style="padding: 0px; box-sizing: border-box; border: none; outline: none; line-height: 1.9;">
-                                                    &nbsp; &nbsp;工商年报：10元/年 &nbsp;深圳公司记账报税<span
-                                                        style="line-height: 1.9;">&nbsp;1500元/年（年费会员免年报费） &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;200元/月 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
-                                                </p>
-                                                <p class="plew"
-                                                   style="padding: 0px; box-sizing: border-box; border: none; outline: none; line-height: 1.9;">
-                                                    工商年报：100元/年 &nbsp; 广州公司记账报税 &nbsp;2388<span
-                                                        style="line-height: 26.6px;">元</span><span
-                                                        style="line-height: 1.9;">/年</span><span
-                                                        style="line-height: 26.6px;">（年费会员免年报费） &nbsp; &nbsp; &nbsp; &nbsp; 300元/月</span>
-                                                </p></div>
-                                        </td>
-                                    </tr>
-                                    <tr style="box-sizing: border-box; padding: 0px; border: none; outline: none;">
-                                        <td class="letd"
-                                            style="box-sizing: border-box; padding: 0px; border-color: rgb(190, 190, 190); outline: none; text-align: center; color: rgb(104, 102, 103); line-height: 60px; width: 160px; background: rgb(248, 248, 248);">
-                                            需准备材料
-                                        </td>
-                                        <td class="ritd"
-                                            style="box-sizing: border-box; padding: 0px; border-color: rgb(190, 190, 190); outline: none; color: rgb(104, 102, 103); line-height: 60px; width: 679px;">
-                                            <div class="marpaddiv"
-                                                 style="max-width: 100%; box-sizing: border-box; padding: 0px 0px 0px 24px; border: none; outline: none;">
-                                                <p class="marpad"
-                                                   style="padding: 0px; box-sizing: border-box; border: none; outline: none;">
-                                                    <span class="spans"
-                                                          style="box-sizing: border-box; padding: 0px; margin-right: 26px; border: none; outline: none; float: left; height: 16px; line-height: 16px;"><span
-                                                            class="spans-i"
-                                                            style="box-sizing: border-box; padding: 0px; margin-right: 13px; border: 1px solid rgb(39, 161, 195); outline: none; float: left; width: 14px; height: 14px; line-height: 14px; display: inline-block; border-radius: 50%; color: rgb(2, 154, 191); text-align: center;">1</span>企业基础证件的复印件；</span><span
-                                                        class="spans"
-                                                        style="box-sizing: border-box; padding: 0px; margin-right: 26px; border: none; outline: none; float: left; height: 16px; line-height: 16px;"><span
-                                                        class="spans-i"
-                                                        style="box-sizing: border-box; padding: 0px; margin-right: 13px; border: 1px solid rgb(39, 161, 195); outline: none; float: left; width: 14px; height: 14px; line-height: 14px; display: inline-block; border-radius: 50%; color: rgb(2, 154, 191); text-align: center;">2</span>企业CA证书、报税密码；</span><span
-                                                        class="spans"
-                                                        style="box-sizing: border-box; padding: 0px; margin-right: 26px; border: none; outline: none; float: left; height: 16px; line-height: 16px;"><span
-                                                        class="spans-i"
-                                                        style="box-sizing: border-box; padding: 0px; margin-right: 13px; border: 1px solid rgb(39, 161, 195); outline: none; float: left; width: 14px; height: 14px; line-height: 14px; display: inline-block; border-radius: 50%; color: rgb(2, 154, 191); text-align: center;">3</span>交接企业原账目；（各地区可能有所不同，请详细咨询客服哦）</span>
-                                                </p></div>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                                <img src="images/service-detail-pic1.jpg" border="0"
-                                     width="763" height="3798">
-                                <div><span style="line-height: 20px; background-color: rgb(244, 244, 244);"><span
-                                        style="font-family:microsoft yahei, arial, sans-serif;color:#878787;"><strong></strong></span></span>
-                                    <div style="font-size: 32px;"><br></div>
-                                </div>
-                                <div><strong
-                                        style="color: rgb(135, 135, 135); font-family: &#39;microsoft yahei&#39;, arial, sans-serif; font-size: 14px; line-height: 20px; background-color: rgb(244, 244, 244);"><span
-                                        style="font-size: 32px;">可免费提供广东区域的地址注册哦！全程无需本人到场，欢迎前来咨询</span></strong>
-                                    <div style="max-width: 100%; color: rgb(135, 135, 135); font-family: &#39;microsoft yahei&#39;, arial, sans-serif; font-size: 14px; line-height: 20px; background-color: rgb(244, 244, 244);">
-                                        <strong><span style="font-size: 32px;"><img
-                                                src="images/service-detail-pic2.jpg"
-                                                border="0" width="750" height="319"
-                                                style="border: none; outline: none; max-width: 100%;"><br></span></strong>
-                                    </div>
-                                    <div style="max-width: 100%; color: rgb(135, 135, 135); font-family: &#39;microsoft yahei&#39;, arial, sans-serif; font-size: 14px; line-height: 20px; background-color: rgb(244, 244, 244);">
-                                        <strong style="font-size: 32px; font-family: SimHei;"><img
-                                                src="images/service-detail-pic3.jpg"
-                                                border="0" width="750" height="953"
-                                                style="border: none; outline: none; max-width: 100%;"></strong></div>
-                                    <div style="max-width: 100%; color: rgb(135, 135, 135); font-family: &#39;microsoft yahei&#39;, arial, sans-serif; font-size: 14px; line-height: 20px; background-color: rgb(244, 244, 244);"></div>
-                                    <div style="max-width: 100%; color: rgb(135, 135, 135); font-family: &#39;microsoft yahei&#39;, arial, sans-serif; font-size: 14px; line-height: 20px; background-color: rgb(244, 244, 244);"></div>
-                                    <div style="max-width: 100%; color: rgb(135, 135, 135); font-family: &#39;microsoft yahei&#39;, arial, sans-serif; font-size: 14px; line-height: 20px; background-color: rgb(244, 244, 244);">
-                                        <strong style="font-size: 32px;"><img
-                                                src="images/service-detail-pic4.jpg"
-                                                border="0" width="750" height="510"
-                                                style="border: none; outline: none; max-width: 100%;"><img
-                                                src="images/service-detail-pic5.jpg"
-                                                border="0" width="750" height="718"
-                                                style="border: none; outline: none; max-width: 100%;"><img
-                                                src="images/service-detail-pic6.jpg"
-                                                border="0" width="812" height="379"></strong></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="transact-step-cont service-detail-wrap">
-                            <div class="service-detail-title">办理步骤及所需时间</div>
-                            <div class="content">
-                                办理流程<br>1.收集客户票据<br>2.会计记账报税<br>3.纳税申报
-                            </div>
-                        </div>
-                        <div class="prepare-stuff-cont service-detail-wrap">
-                            <div class="service-detail-title">办理所需材料</div>
-                            <div class="content">
-                                日常票据、记账凭证、账本、资产负债表、利润表、现金流量表
-                            </div>
-                        </div>
-                        <div class="process-time-cont service-detail-wrap">
-                            <div class="service-detail-title">售后服务</div>
-                            <div class="content">
-                                及时响应<br>咨询5分钟内<br>立即与您联系<br><br>专职客服人员<br>一对一服务<br><br>短信+微信<br>流程中每个节点<br>我们及时通知
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="rightside-content jmod-platform-garantee">
-                    <div class="mod-head mod-head-small">
-                        <h3 class="mod-title-small">平台保障</h3>
-                    </div>
-                    <div class="mod-white-box">
-                        <div class="guart-wrap">
-                            <ul class="guart-list">
-                                <li class="guart-item guart-quality">
-                                    <div class="guart-item-wrap">
-                                        <h4 class="guart-item-title">商家资质认证</h4>
-                                        <div class="guart-item-desc">严筛服务商，提供品质服务</div>
-                                    </div>
-                                </li>
-                                <li class="guart-item guart-instant">
-                                    <div class="guart-item-wrap">
-                                        <h4 class="guart-item-title">需求闪电响应</h4>
-                                        <div class="guart-item-desc">首次需求响应不超3分钟</div>
-                                    </div>
-                                </li>
-                                <li class="guart-item guart-service">
-                                    <div class="guart-item-wrap">
-                                        <h4 class="guart-item-title">平台交易担保</h4>
-                                        <div class="guart-item-desc">服务满意，再付款给服务商</div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <div class="leftside-content jmod-sku-detail"></div>
+                <div class="rightside-content jmod-platform-garantee"></div>
             </div>
         </div>
     </div>
 </div>
-<div class="mod-fixed-corp-contact">
-    <div class="fixed-contact">
-        <div class="fixed-contact-item">
-            <div class="fixed-contact-k">联系服务商</div>
-            <a class="fixed-contact-v jmod-wpa-qq jmod-consult-stat" _wpa_qq="319591724" target="_blank"
-               _stat_click_id="8_316389" href="http://wpa.qq.com/msgrd?v=3&amp;uin=319591724&amp;site=qq&amp;menu=yes"
-               data-cid="316389" id="wpaId1">QQ 咨询</a>
-        </div>
-        <div class="fixed-contact-item">
-            <div class="fixed-contact-k">服务时间</div>
-            <div class="fixed-contact-v">
-                <p>null至null</p>
-                <p>null-null</p>
-            </div>
-            <div class="fixed-contact-v">
-                <p>null至null</p>
-                <p>null-null</p>
-            </div>
-        </div>
-        <div class="fixed-contact-item">
-            <div class="fixed-contact-k">客服电话</div>
-            <span class="fixed-contact-v">18823385959</span>
-        </div>
-
-        <div class="fixed-contact-item">
-            <a href="" title="返回顶部" class="backtop"></a>
-        </div>
-    </div>
-</div>
-<form id="viewform" class="hidden" action="" method="get">
+<div class="mod-fixed-corp-contact"></div>
+<form id="viewform" class="hidden" action="/order/orderBook" method="get">
     <input type="hidden" name="csId" value="">
     <input type="hidden" name="cityId" value="">
     <input type="hidden" name="provinceId" value="">
@@ -620,6 +302,32 @@
     <input type="hidden" name="skuId" value="">
 </form>
 
+
+<script>
+    function loadScript(src, callback) {
+        var s,
+            r,
+            t;
+        r = false;
+        s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.src = src;
+        s.onload = s.onreadystatechange = function () {
+            //console.log( this.readyState ); //uncomment this line to see which ready states are called.
+            if (!r && (!this.readyState || this.readyState == 'complete')) {
+                r = true;
+                callback();
+            }
+        };
+        t = document.getElementsByTagName('script')[0];
+        t.parentNode.insertBefore(s, t);
+    }
+
+    loadScript(location.protocol + '//' + location.host + '/Httpspxy/index?url=' + encodeURIComponent('http://wpa.b.qq.com/cgi/wpa.php'), function () {
+    });
+</script>
+
+<script src="js/service.detail.js"></script>
 <div class="mod-footer-prom dark-theme">
     <div class="layout">
         <div class="mod-footer-prom-list">
@@ -655,7 +363,8 @@
             <p class="footer-contact-email">商务合作：openservice@tencent.com</p>
         </div>
         <div class="footer-contact-col ml">
-            <span class="footer-contact-code"><img src="images/cf-code-55b0d8d92a.png"></span>
+            <span class="footer-contact-code"><img
+                    src="//qzs.qq.com/cfplat/common/img/cf-code-55b0d8d92a.png?max_age=31536000"></span>
             <p class="footer-contact-tit">关注公众号</p>
             <p>掌握订单实时状态</p>
             <p>获取创业最新资讯</p>
@@ -664,34 +373,57 @@
 </div>
 <div class="footer">
     <div class="layout">
-        <p>
-            <a target="_blank" href="">联系我们</a>|
-            <a target="_blank" href="">投诉举报</a>|
-            <a target="_blank" href="">Complaint Guidelines</a>|
-            <a target="_blank" href="">开放平台</a>
-        </p>
+        <p><a target="_blank" _hot_tag="OPEN.CONTRACTUS" href="http://open.qq.com/support">联系我们</a>|<a target="_blank"
+                                                                                                       _hot_tag="OPEN.COMPLAIN"
+                                                                                                       href="http://wiki.open.qq.com/wiki/%E6%8A%95%E8%AF%89%E6%8C%87%E5%BC%95">投诉举报</a>|<a
+                target="_blank" _hot_tag="OPEN.COMPLAIN.EN"
+                href="http://wiki.open.qq.com/wiki/Tencent_Open_Platform_Complaint_Guidelines">Complaint Guidelines</a>|<a
+                target="_blank" href="http://open.qq.com">腾讯开放平台</a></p>
         <p>Copyright © 1998 - 2017 Tencent. All Rights Reserved.</p>
     </div>
 </div>
-
-<!--<script src="js/common-cb517c5c11.js"></script>-->
-<div class="ui-toast hidden jmod_toast_success">
-    <div class="ui-toast-inner"><span class="ui-toast-ico suc"></span><span class="jmod_msg">操作成功</span></div>
-</div>
-<div class="ui-toast hidden jmod_toast_fail">
-    <div class="ui-toast-inner"><span class="ui-toast-ico warn"></span><span class="jmod_msg">操作失败</span></div>
-</div>
-<div class="ui-toast hidden jmod_toast_loading">
-    <div class="ui-toast-inner"><span class="ui-toast-ico loading"></span><span>正在加载，请稍候...</span></div>
-</div>
-<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="js/Selector.js"></script>
-<script type="text/javascript" src="js/service-detail.js"></script>
 <script type="text/javascript">
-    new SelectorJS.area.init('#AreaSelector','101020600', false);
+    var Env = {
+        "qzsDomain": "qzs.qq.com",
+        "zcDomain": "c.qq.com",
+        "cDomain": "c.qq.com",
+        "mDomain": "m.c.qq.com",
+        "adminDomain": "zcoa.3gqq.com",
+        "qtengDomain": "qteng.qq.com",
+        "statDomain": "stat.c.qq.com",
+        "vcDomain": "vc.open.qq.com",
+        "tgpcDomain": "tgpc.qq.com",
+        "title": "\u6b63\u5f0f\u73af\u5883",
+        "id": "production",
+        "cgiDomain": "c.qq.com"
+    };
 </script>
-<!--<script src="js/main-0a3a3ec4ce.entry.js"></script>-->
+<script src="js/common-cb517c5c11.js"></script>
 
+<script>
+    function loadScript(src, callback) {
+        var s,
+            r,
+            t;
+        r = false;
+        s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.src = src;
+        s.onload = s.onreadystatechange = function () {
+            //console.log( this.readyState ); //uncomment this line to see which ready states are called.
+            if (!r && (!this.readyState || this.readyState == 'complete')) {
+                r = true;
+                callback();
+            }
+        };
+        t = document.getElementsByTagName('script')[0];
+        t.parentNode.insertBefore(s, t);
+    }
 
+    loadScript(location.protocol + '//tajs.qq.com/stats?sId=59932491', function () {
+    });
+</script>
+<script src="js/service.detail.entry.js"></script>
 </body>
+
 </html>

@@ -12,11 +12,9 @@
     <script src="js/jquery-1.12.0.min.js"></script>
     <script src="js/selectivizr-min.js"></script>
 <![endif]-->
-    <script src="js/jquery-1.9.1.min.js"></script>
-    <link rel="stylesheet" href="css/base.css"/>
     <link rel="stylesheet" href="css/common.css"/>
     <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/page-index.css">
 </head>
 <body>
     <div class="mod-topbar" id="jmod_topbar">
@@ -295,7 +293,8 @@
             <div class="swiper-pagination"></div>
         </div>
         <div class="layout">
-            <div class="mod-userbox guest jmod-login">
+            <!--未登录-->
+            <div class="mod-userbox guest jmod-login" style="display: none">
                 <div class="mod-userbox-top">
                     <div class="mod-userbox-user">
                         <div class="mod-userbox-avatar"><img src="images/avatar-guest-3168c6a1b3.png"></div>
@@ -317,13 +316,55 @@
                     <a target="_blank" href="">立即入驻&nbsp;&gt;</a>
                 </div>
             </div>
+            <!--已登录-->
+            <div class="mod-userbox jmod-login">
+                <div class="mod-userbox-top">
+                    <div class="mod-userbox-user">
+                        <span class="mod-userbox-avatar"><img src="//q.qlogo.cn/g?b=qq&amp;nk=794581100&amp;s=100"></span>
+                        <div class="mod-userbox-info">
+                            <p class="mod-userbox-name">794581100</p>
+                        </div>
+                        <div class="mod-userbox-account">
+                            <div class="col">
+                                <p>待付款</p>
+                                <p class="red"><a href="/order/usercenter#status=1" target="_blank">2</a></p>
+                            </div>
+                            <div class="col">
+                                <p>待交付</p>
+                                <p class="red"><a href="/order/usercenter#status=3" target="_blank">0</a></p>
+                            </div>
+                            <div class="col">
+                                <p>待验收</p>
+                                <p class="red"><a href="/order/usercenter#status=4" target="_blank">0</a></p>
+                            </div>
+                            <div class="col">
+                                <p>待评价</p>
+                                <p class="red"><a href="/order/usercenter#status=5_1" target="_blank">0</a></p>
+                            </div>
+                            <div class="redp">
+                                我的红包余额<a href="/Mkacc/userMkaccInfo" target="_blank">¥999</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mod-userbox-mid">
+                    <img class="qrcode" src="//p.qpic.cn/zc_pic/0/ce3a886c6cf0e3028fdb232056283f4514811263160398/0">
+                    <div class="tip">
+                        <p>关注微信公众号</p>
+                        <p>掌握订单实时状态</p>
+                    </div>
+                </div>
+                <div class="mod-userbox-btm">
+                    <i class="ico-shang"></i>加入平台成为服务商<a target="_blank" href="/seller/register" _stat_click_id="5_05">立即入驻&nbsp;&gt;</a>
+                </div>
+            </div>
         </div>
     </div>
     <div class="promo">
         <div class="layout clearfix">
-            <a href="" target="_blank" class="promo-card"><img src="other/0"></a>
-            <a href="" target="_blank" class="promo-card"><img src="other/0"></a>
-            <a href="" target="_blank" class="promo-card"><img src="other/0"></a>
+            <a href="" target="_blank" class="promo-card"><img src="images/promo-pic1.jpg"></a>
+            <a href="" target="_blank" class="promo-card"><img src="images/promo-pic2.jpg"></a>
+            <a href="" target="_blank" class="promo-card"><img src="images/promo-pic3.jpg"></a>
             <div class="news">
                 <h6>平台最新动态</h6>
                 <p><a href="" target="_blank">第二届腾讯818创业节深圳首站启动</a></p>
@@ -651,7 +692,7 @@
             <p>Copyright © 1998 - 2017 Tencent. All Rights Reserved.</p>
         </div>
     </div>
-    <!-- <script src="js/common-cb517c5c11.js"></script> -->
+    <script src="js/common-cb517c5c11.js"></script>
     <div class="fixed-content">
         <div class="item fixed-item-more code">
             <div class="layer-content code-layer" style="display: none">
@@ -683,10 +724,11 @@
         </div>
         <a href="#" title="返回顶部" class="item backtop"></a>
     </div>
+    <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/page-common.js"></script>
     <script src="js/index.js"></script>
-    <!-- <script src="js/fixed-bar-9afbdfe31f.js"></script> -->
-    <!-- <script src="js/main-90a048d2c7.entry.js"></script> -->
+    <script src="js/fixed-bar-9afbdfe31f.js"></script>
+    <script src="js/index.entry.js"></script>
 </body>
 </html>
