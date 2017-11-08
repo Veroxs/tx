@@ -1,8 +1,8 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>我的订单</title>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8">
+    <title>服务商-创建项目</title>
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
@@ -13,13 +13,13 @@
     <script src="js/selectivizr-min.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="css/common.css"/>
-    <link rel="stylesheet" href="css/page-user-order-detail-step2.css">
+    <link rel="stylesheet" href="css/user-creat-project.css">
 </head>
 <body>
 <script>
-    //document.domain = 'qq.com';
+//    document.domain = '';
     var hasLogin = '1';
-    var hasReg = '1';
+    var hasReg = '';
 </script>
 <div class="mod-topbar" id="jmod_topbar">
     <div class="layout clearfix">
@@ -273,144 +273,167 @@
         <a href="" class="mod-nav-item">商家列表</a>
     </div>
 </div>
-<div class="mall-container">
+<!-- 基本信息 -->
+<div class="mod-form">
     <div class="layout">
-        <div class="mod-crumb jmod-crumb">
-            <a href="/">首页</a> &gt; <a href="/order/usercenter">已订购的服务</a> &gt; 订单2017110738239067287详情
+        <div class="mod-form-hd">
+            <h4 class="caption">基本信息</h4>
         </div>
-        <div class="customer-main">
-            <div class="jmod-orderstep"><ul class="mod-orderstep"><li class="mod-orderstep-item mod-orderstep-done" style="width: 160px;"><p class="mod-orderstep-count">1</p><p class="mod-orderstep-title">提交订单</p><p class="mod-orderstep-time">2017-11-07 17:58:29</p><i style="width: 350px"></i></li><li class="mod-orderstep-item mod-orderstep-cur" style="width: 160px; margin-left: 184.333px;"><p class="mod-orderstep-count">2</p><p class="mod-orderstep-title">付款</p><i style="width: 350px"></i></li><li class="mod-orderstep-item" style="width: 160px; margin-left: 184.333px;"><p class="mod-orderstep-count">3</p><p class="mod-orderstep-title">接受服务</p><i style="width: 350px"></i></li><li class="mod-orderstep-item" style="width: 160px; margin-left: 184.333px;"><p class="mod-orderstep-count">4</p><p class="mod-orderstep-title">确认服务完成</p></li></ul></div>
-            <div class="jmod-orderstatus">
-                <div class="mod-white-box payment-content-box">
-
-                    <p class="title-18px">订单创建成功，请您尽快支付。超过<span class="mod-emph">72小时</span>未支付，订单将自动取消。</p>
-                    <p class="weak payment-mg-bot-32px">在您未验收服务之前，您所支付的款项将暂存在腾讯。在您验收服务完毕后，腾讯才会将款项支付给服务商。</p>
-                    <span class="ui-button ui-button-suc jmod-wechat-pay" _stat_click_id="7_4">微信支付</span>
-                    <a id="prepay" class="payment-mg-left-24px" _stat_click_id="7_2">财付通支付</a>
-                    <a _stat_click_id="7_3" data-id="2017110738239067287" href="javascript:void(0);" class="payment-mg-left-24px jmod_cancel_order">取消订单</a>
-
+        <div class="mod-form-bd">
+            <div class="mod-form-row">
+                <div class="mod-form-tit">
+                    <label>项目名称<span class="require">*</span></label>
                 </div>
-                <div class="ui-dialog-wrap dialog-wx-qrcode" id="Pop-WxQrCode">
-                    <div class="ui-dialog jmod-wechat-code">
-                        <a href="javascript:void(0);" class="ui-dialog-close jmod_close_paycode"></a>
-                        <div class="ui-dialog-title">支付1元</div>
-                        <div class="ui-dialog-body">
-                            <div class="ui-dialog-alert">微信扫描码支付</div>
-                            <div class="qrcode">
-                                <div id="wxpay_qrcode"></div>
-                                <div class="refresh"><a class="jmod-wechat-pay" href="javascript:void(0);">重新获取二维码</a></div>
-                            </div>
-                            <p class="weak tip-1"><em class="red" id="CountDown-QrCode">XX秒</em>后此二维码过期</p>
-                            <p class="tip-2 red">二维码已过期，请重获二维码</p>
+                <div class="mod-form-cont">
+                    <div class="mod-form-col">
+                        <div class="ui-input count default-w">
+                            <input type="text" name="p_name" placeholder="请填写用户熟知的项目或产品名称" validate="true"
+                                   validate_type="empty|jsLength" cant_empty="1" maxlen="10" maxlength="10"
+                                   validate_tip="请填写项目名称|1-10个字" value=""/>
+                            <div class="ui-input-bg"></div>
+                            <label class="ui-input-count"><i>0</i>/<i>10</i></label>
+                        </div>
+                        <p class="input-tips err"></p>
+                        <p class="input-tips suc"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="mod-form-row">
+                <div class="mod-form-tit">
+                    <label>项目行业<span class="require">*</span></label>
+                </div>
+                <div class="mod-form-cont">
+                    <div class="mod-form-col">
+                        <select name="p_industry" class="select" validate="true" validate_type="empty"
+                                validate_tip="请选择">
+                            <option value="">请选择</option>
+                            <option value="1">电子商务</option>
+                            <option value="2">社交</option>
+                            <option value="3">生活O2O</option>
+                            <option value="4">企业服务</option>
+                            <option value="5">教育培训</option>
+                            <option value="6">智能硬件</option>
+                            <option value="7">媒体资讯</option>
+                            <option value="8">广告营销</option>
+                            <option value="9">健康医疗</option>
+                            <option value="10">房产家居</option>
+                            <option value="11">汽车交通</option>
+                            <option value="12">金融</option>
+                            <option value="13">游戏</option>
+                            <option value="14">工具软件</option>
+                            <option value="15">旅游</option>
+                            <option value="16">影视娱乐</option>
+                            <option value="17">体育运动</option>
+                            <option value="18">文化艺术</option>
+                            <option value="19">安全</option>
+                            <option value="20">数据</option>
+                            <option value="21">创业者服务</option>
+                            <option value="22">机器人</option>
+                            <option value="23">农业</option>
+                            <option value="1000">其他</option>
+                        </select>
+                        <p class="input-tips err"></p>
+                        <p class="input-tips suc"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="mod-form-row">
+                <div class="mod-form-tit">
+                    <label>行业标签</label>
+                </div>
+                <div class="mod-form-cont">
+                    <div class="mod-form-col tag-wrap industry-tag" data-lids=''>
+                    </div>
+                    <p class="text more-tips">标签可以帮助项目更快被人识别，最多选择3个。</p>
+                </div>
+            </div>
+            <div class="mod-form-row">
+                <div class="mod-form-tit">
+                    <label>行业标签</label>
+                </div>
+                <div class="mod-form-cont">
+                    <div class="mod-form-col mb">
+                        <div class="ui-input count">
+                            <input type="text" validate="true" value="一次性价格" disabled>
+                            <div class="ui-input-bg"></div>
+                        </div>
+                        <label class="text">-</label>
+                        <div class="ui-input count">
+                            <input type="text" validate="true" value="">
+                            <div class="ui-input-bg"></div>
+                        </div>
+                        <span class="span-text">元</span>
+                        <div class="ui-checkbox ml mr display">
+                            <input type="checkbox" id="checkbox-st1" name="c_service_time" validate="true" validate_type="empty" validate_tip="请选择需要的价格" checked="">
+                            <label for="checkbox-st1" class="ui-checkbox-rect checked"></label>
+                            <label for="checkbox-st1" class="ui-checkbox-text"></label>
                         </div>
                     </div>
-                    <div class="ui-dialog">
-                        <a href="#" class="ui-dialog-close jmod-close"></a>
-                        <div class="ui-dialog-title">取消订单</div>
-                        <div class="ui-dialog-body">
-                            <div class="ui-dialog-alert">确认取消订单？</div>
-                            <p class="weak">订单取消后无法恢复。</p>
+                    <div class="mod-form-col mb">
+                        <div class="ui-input count">
+                            <input type="text" validate="true" value="一年价格" disabled>
+                            <div class="ui-input-bg"></div>
                         </div>
-                        <div class="ui-dialog-footer">
-
-                            <a href="#" class="jmod-ok ui-button ui-button-suc">确定取消订单</a>
-
-
+                        <label class="text">-</label>
+                        <div class="ui-input count">
+                            <input type="text" validate="true" value="">
+                            <div class="ui-input-bg"></div>
                         </div>
-                    </div></div>
-                <form id="prepay-form" class="hidden" action="/payPortal/prepay" method="post">
-                    <input type="hidden" name="soId" value="2017110738239067287">
-                    <input type="hidden" name="opId" value="2017110738239067288">
-                    <input type="hidden" name="payType" value="5">
-                </form>
-            </div>
-            <div class="mod-white-box payment-content-box jmod-orderinfo">
-                <div class="title-18px">订单信息</div>
-                <div class="weak">
-                    <span class="order-code">订单编号：2017110738239067287</span>
-
+                        <span class="span-text">元</span>
+                        <div class="ui-checkbox ml mr display">
+                            <input type="checkbox" id="checkbox-st2" name="c_service_time" validate="true" validate_type="empty" validate_tip="请选择需要的价格" checked="">
+                            <label for="checkbox-st2" class="ui-checkbox-rect"></label>
+                            <label for="checkbox-st2" class="ui-checkbox-text"></label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="mod-form-col block-el">
+                        <p class="more-tips font-sm"> 项目价格，可以根据需要设置合适的价格类型</p>
+                    </div>
                 </div>
-                <div class="ui-table table-mall table-order table-payment-c">
-                    <table>
-                        <colgroup>
-                            <col class="col-service-cont">
-                            <col class="col-vender-info">
-                            <col class="col-region">
-                            <col class="col-service-period">
-                            <col class="col-price">
-                            <col class="col-quantity">
-                            <col class="col-redeem">
-                            <col class="col-buyer-info">
-                            <col class="col-actual-price">
-                        </colgroup>
-                        <thead>
-                        <tr>
-                            <th>订单内容</th>
-                            <th>服务商</th>
-                            <th>服务地区</th>
-                            <th>服务期限</th>
-                            <th>单价</th>
-                            <th>数量</th>
-                            <th>优惠</th>
-                            <th>买家信息</th>
-                            <th>实付价</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td class="col-text-left">
-                                <p class="primary">
-                                    <a href="/cmdty/detail?csId=17666" target="_blank">创业问诊（公司名称查询）</a>
-                                </p>
-                                <p class="primary">
-                                    <span class="icon-grantee" title="承诺按时按质保证完成"></span>
-
-                                    <span class="icon-receipt" title="提供发票"></span>
-
-                                </p>
-                            </td>
-                            <td>
-                                <p class="primary-weak"><a _stat_click_id="6_1" href="/seller/corpinfo?c_id=320425" target="_blank">中港星</a><a href="/scenter/growth" target="_blank" class="lv">Lv2</a></p>
-                                <p><a target="_blank" _stat_click_id="6_2" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2374149901&amp;site=qq&amp;menu=yes" class="qq-service icon-qq jmod-wpa-qq" _wpa_qq="2374149901" id="wpaId0">售后QQ</a></p>
-                            </td>
-                            <td>
-                                <p class="primary-weak">福建 - 厦门</p>
-                            </td>
-                            <td>
-                                <p class="primary-weak">一次性</p>
-                            </td>
-                            <td>
-
-
-                                <p class="primary">¥1.00</p>
-
-                            </td>
-                            <td>
-                                <p class="primary">1</p>
-                            </td>
-
-                            <td><p class="primary-weak">无</p><p></p></td>
-
-                            <td class="col-text-left">
-                                <p class="primary-weak">林夕</p>
-                                <p class="primary-weak">13200000000</p>
-                                <p class="primary-weak">794581100@qq.com</p>
-                                <p class="primary-weak">互动创想</p>
-                            </td>
-                            <td>
-                                <p class="primary">¥1.00</p>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-
             </div>
         </div>
     </div>
 </div>
+<!-- 团队信息 -->
+<div class="mod-form">
+    <div class="layout">
+        <div class="mod-form-hd">
+            <h4 class="caption">服务内容详情</h4>
+        </div>
+        <div class="mod-form-bd">
+            <div class="mod-form-row">
+                <div class="mod-form-tit">
+                    <label>内容详情</label>
+                    <span class="require">*</span>
+                </div>
+                <div class="mod-form-cont">
+                    <div class="mod-form-col">
+                        <div class="ui-textarea count default-w">
+                            <textarea name="c_team_adv" placeholder="web编辑器"
+                                      rows="5" validate="true" validate_type="jsLength" maxlen="100" maxlength="100"
+                                      validate_tip="请填写服务内容"></textarea>
+                            <div class="ui-textarea-bg"></div>
+                            <label class="ui-textarea-count"><i>0</i>/<i>100</i></label>
+                        </div>
+                        <p class="input-tips err"></p>
+                        <p class="input-tips suc"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<script src="js/user.order.detail.step2.js"></script>
+
+<div class="mod-opt">
+    <div class="inner">
+        <div class="layout">
+            <p class="tips hidden">页面内容已于 <span></span> 保存</p>
+            <a href="javascript:;" data-type="1" _stat_click_id="6_1" class="ui-button">保存</a>
+        </div>
+    </div>
+</div>
+<script src="js/facilitator.create.project.js"></script>
 <div class="mod-footer-prom dark-theme">
     <div class="layout">
         <div class="mod-footer-prom-list">
@@ -536,7 +559,6 @@
     <a href="#" title="返回顶部" class="item backtop"></a>
 </div>
 <script src="js/fixed-bar-9afbdfe31f.js"></script>
-<script src="js/qrcode.js"></script>
-<script src="js/user.order.detail.step2.entry.js"></script>
+<script src="js/facilitator.create.project.entry.js"></script>
 </body>
 </html>

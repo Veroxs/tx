@@ -1962,7 +1962,7 @@
     width: 16px;
     height: 16px;
     background-color: #b6bbc6;
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAGUExURQAAAPj4+HGzijwAAAABdFJOUwBA5thmAAAAMElEQVQI12Ow/8Mg/4Oh/yPD8ccMj48zfOxn+CHP8McehIAMIBcoCJQCKgAqs/8DAA7OFfEaaIPmAAAAAElFTkSuQmCC');
+    background-image: url('../images/del2-icon.png');
     background-repeat: no-repeat;
     -webkit-transition: background-color .3s ease;
     transition: background-color .3s ease;

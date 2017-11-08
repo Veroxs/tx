@@ -302,12 +302,12 @@
     margin: -1px 4px 0 0;
     vertical-align: middle;
     background-position: 0 0;
-    background-image: url('../other/91vtovNY1keA5TjXjcAQPvUh8KnBdhRYaGId91rjJtZ5Vwne9yEw1pjrKDDvXwmSHElypJcRtVrX8038Xr9JV2IftuMSBpJ8w1kcr6rX7UbUSmABPiTZht1YgSuYW1XfG9FdOIibSZ7jJN412D9q0n+Q5Blm4SFOVtX1doNPsqUxshZfq2p1p8eSZEnHS5MxS1v1fwHD1bdsJD8YigAAAABJRU5ErkJggg==');
+    background-image: url('../images/star-icon.png');
     background-repeat: no-repeat
 }
 
 .mod-rating-star label.checked {
-    background-image: url('../other/AS86mIH7p5kYr4GwtYCFV5BrcxtfXcX6CYZna1XG4sAAAAAElFTkSuQmCC');
+    background-image: url('../images/star-icon-cur.png');
     background-repeat: no-repeat
 }
 
@@ -501,7 +501,7 @@
     width: 16px;
     height: 16px;
     background-color: #b6bbc6;
-    background-image: url('../other/8DAA7OFfEaaIPmAAAAAElFTkSuQmCC');
+    background-image: url('../images/del2-icon.png');
     background-repeat: no-repeat;
     -webkit-transition: background-color .3s ease;
     transition: background-color .3s ease;
