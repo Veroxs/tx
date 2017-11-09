@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-    <title>支付提交</title>
+    <title>我的订单</title>
     <meta charset="UTF-8"/>
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
@@ -16,6 +16,11 @@
     <link rel="stylesheet" href="css/page-user-order-detail-step2.css">
 </head>
 <body>
+<script>
+    //document.domain = 'qq.com';
+    var hasLogin = '1';
+    var hasReg = '1';
+</script>
 <div class="mod-topbar" id="jmod_topbar">
     <div class="layout clearfix">
         <div class="mod-topbar-links">
@@ -271,34 +276,51 @@
 <div class="mall-container">
     <div class="layout">
         <div class="mod-crumb jmod-crumb">
-            <a href="/">首页</a> &gt; <a href="/order/usercenter">已订购的服务</a> &gt; 订单2017110656230267430详情
+            <a href="/">首页</a> &gt; <a href="/order/usercenter">已订购的服务</a> &gt; 订单2017110888239464612详情
         </div>
         <div class="customer-main">
-            <div class="jmod-orderstep"><ul class="mod-orderstep"></ul></div>
+            <div class="jmod-orderstep">
+                <ul class="mod-orderstep">
+                    <li class="mod-orderstep-item mod-orderstep-done" style="width: 160px;"><p
+                            class="mod-orderstep-count">1</p>
+                        <p class="mod-orderstep-title">提交订单</p>
+                        <p class="mod-orderstep-time">2017-11-08 11:24:09</p><i style="width: 350px"></i></li>
+                    <li class="mod-orderstep-item mod-orderstep-done" style="width: 160px; margin-left: 184.333px;"><p
+                            class="mod-orderstep-count">2</p>
+                        <p class="mod-orderstep-title">付款</p>
+                        <p class="mod-orderstep-time">2017-11-08 11:24:22</p><i style="width: 350px"></i></li>
+                    <li class="mod-orderstep-item mod-orderstep-done" style="width: 160px; margin-left: 184.333px;"><p
+                            class="mod-orderstep-count">3</p>
+                        <p class="mod-orderstep-title">接受服务</p>
+                        <p class="mod-orderstep-time">开始 2017-11-08 11:25:52</p>
+                        <p class="mod-orderstep-time">完成 2017-11-08 12:00:51</p><i style="width: 350px"></i></li>
+                    <li class="mod-orderstep-item mod-orderstep-cur" style="width: 160px; margin-left: 184.333px;"><p
+                            class="mod-orderstep-count">4</p>
+                        <p class="mod-orderstep-title">确认服务完成</p></li>
+                </ul>
+            </div>
             <div class="jmod-orderstatus">
                 <div class="mod-white-box payment-content-box">
-
-
-                    <div class="title-18px">买家已取消订单，款项将在7个工作日内退回账户。</div>
-
-
-
-
-
-                    <p class="weak contact-serv">
-                        若您还有其他疑问，可联系
-                        <a class="jmod-wpa-qq" _wpa_qq="800013811" _stat_click_id="11_2" href="javascript:void(0);" id="wpaId0">平台客服</a>
-                        进行申诉。
+                    <div class="title-18px">服务商已完成服务，等待您的确认。</div>
+                    <p class="weak payment-mg-bot-32px">您还有 <span class="jmod-countdown mod-emph">14天22小时</span>
+                        来完成服务确认操作。服务确认完成后，腾讯才会与服务商进行结算。如果您超时未确认，系统将自动确认服务，完成交易。</p>
+                    <div class="btn-wrap mg-bot-32px">
+                        <span href="javascript:void(0);" data-id="2017110888239464612" _stat_click_id="9_1"
+                              class="ui-button ui-button-suc jmod-check-order">确认验收</span>
+                        <a data-id="2017110888239464612" class="hidden ext-time-btn mg-left-24px jmod_delay_confirm"
+                           href="javascript:void(0);">延长确认时间</a>
+                    </div>
+                    <p class="weak contact-serv">若您对服务有疑议，可联系<a class="jmod-wpa-qq" _wpa_qq="800013811"
+                                                                _stat_click_id="9_2" href="javascript:void(0);">平台客服</a>。
                     </p>
-
                 </div>
             </div>
             <div class="mod-white-box payment-content-box jmod-orderinfo">
                 <div class="title-18px">订单信息</div>
                 <div class="weak">
-                    <span class="order-code">订单编号：2017110656230267430</span>
+                    <span class="order-code">订单编号：2017110888239464612</span>
 
-                    <span class="tenpay-code">微信交易号：4200000023201711062950041524</span>
+                    <span class="tenpay-code">微信交易号：4200000014201711083222517224</span>
 
                 </div>
                 <div class="ui-table table-mall table-order table-payment-c">
@@ -341,8 +363,13 @@
                                 </p>
                             </td>
                             <td>
-                                <p class="primary-weak"><a _stat_click_id="6_1" href="/seller/corpinfo?c_id=320425" target="_blank">中港星</a><a href="/scenter/growth" target="_blank" class="lv">Lv1</a></p>
-                                <p><a target="_blank" _stat_click_id="6_2" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2374149901&amp;site=qq&amp;menu=yes" class="qq-service icon-qq jmod-wpa-qq" _wpa_qq="2374149901" id="wpaId1">售后QQ</a></p>
+                                <p class="primary-weak"><a _stat_click_id="6_1" href="/seller/corpinfo?c_id=320425"
+                                                           target="_blank">中港星</a><a href="/scenter/growth"
+                                                                                     target="_blank" class="lv">Lv2</a>
+                                </p>
+                                <p><a target="_blank" _stat_click_id="6_2"
+                                      href="http://wpa.qq.com/msgrd?v=3&amp;uin=2374149901&amp;site=qq&amp;menu=yes"
+                                      class="qq-service icon-qq jmod-wpa-qq" _wpa_qq="2374149901">售后QQ</a></p>
                             </td>
                             <td>
                                 <p class="primary-weak">福建 - 厦门</p>
@@ -360,13 +387,14 @@
                                 <p class="primary">1</p>
                             </td>
 
-                            <td><p class="primary-weak">无</p><p></p></td>
+                            <td><p class="primary-weak">无</p>
+                                <p></p></td>
 
                             <td class="col-text-left">
-                                <p class="primary-weak">corey.zeng</p>
-                                <p class="primary-weak">13200020000</p>
+                                <p class="primary-weak">林夕</p>
+                                <p class="primary-weak">13200000000</p>
                                 <p class="primary-weak">794581100@qq.com</p>
-                                <p class="primary-weak">齐家网</p>
+                                <p class="primary-weak">互动创想</p>
                             </td>
                             <td>
                                 <p class="primary">¥1.00</p>
@@ -380,7 +408,8 @@
         </div>
     </div>
 </div>
-
+</div>
+<script src="js/user.order.detail.step4.js"></script>
 <div class="mod-footer-prom dark-theme">
     <div class="layout">
         <div class="mod-footer-prom-list">
@@ -425,37 +454,76 @@
 </div>
 <div class="footer">
     <div class="layout">
-        <p>
-            <a target="_blank" href="">联系我们</a>|
-            <a target="_blank" href="">投诉举报</a>|
-            <a target="_blank" href="">Complaint Guidelines</a>|
-            <a target="_blank" href="">开放平台</a>
-        </p>
+        <p><a target="_blank" _hot_tag="OPEN.CONTRACTUS" href="http://open.qq.com/support">联系我们</a>|<a target="_blank"
+                                                                                                       _hot_tag="OPEN.COMPLAIN"
+                                                                                                       href="http://wiki.open.qq.com/wiki/%E6%8A%95%E8%AF%89%E6%8C%87%E5%BC%95">投诉举报</a>|<a
+                target="_blank" _hot_tag="OPEN.COMPLAIN.EN"
+                href="http://wiki.open.qq.com/wiki/Tencent_Open_Platform_Complaint_Guidelines">Complaint Guidelines</a>|<a
+                target="_blank" href="http://open.qq.com">腾讯开放平台</a></p>
         <p>Copyright © 1998 - 2017 Tencent. All Rights Reserved.</p>
     </div>
 </div>
+<script type="text/javascript">
+    var Env = {
+        "qzsDomain": "qzs.qq.com",
+        "zcDomain": "c.qq.com",
+        "cDomain": "c.qq.com",
+        "mDomain": "m.c.qq.com",
+        "adminDomain": "zcoa.3gqq.com",
+        "qtengDomain": "qteng.qq.com",
+        "statDomain": "stat.c.qq.com",
+        "vcDomain": "vc.open.qq.com",
+        "tgpcDomain": "tgpc.qq.com",
+        "title": "\u6b63\u5f0f\u73af\u5883",
+        "id": "production",
+        "cgiDomain": "c.qq.com"
+    };
+</script>
+<script src="js/common.js"></script>
+<script>
+    function loadScript(src, callback) {
+        var s,
+            r,
+            t;
+        r = false;
+        s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.src = src;
+        s.onload = s.onreadystatechange = function () {
+            //console.log( this.readyState ); //uncomment this line to see which ready states are called.
+            if (!r && (!this.readyState || this.readyState == 'complete')) {
+                r = true;
+                callback();
+            }
+        };
+        t = document.getElementsByTagName('script')[0];
+        t.parentNode.insertBefore(s, t);
+    }
 
+    loadScript(location.protocol + '//tajs.qq.com/stats?sId=59932491', function () {
+    });
+</script>
 <div class="fixed-content">
-    <div class="item fixed-item-more code">
-        <div class="layer-content code-layer" style="display: none">
+    <div class="item code">
+        <div class="code-layer" style="display:none;">
             <div class="mod-tab-panel" style="visibility: hidden;height: 0px;">
                 <div class="tab-item cur">
-                    <span class="item-in">开放平台</span>
+                    <span class="item-in">腾讯开放平台</span>
                 </div>
                 <div class="tab-item">
-                    <span class="item-in">众创空间</span>
+                    <span class="item-in">腾讯众创空间</span>
                 </div>
             </div>
             <div class="tab-content">
                 <img src="images/zc-code.png" width="113" height="113" alt="腾讯开放平台公众号">
-                <p>创业服务平台</p>
+                <p>腾讯创业服务平台</p>
                 <p>微信公众号</p>
                 <p class="intro">掌握订单实时状态，定期分享创业干货。</p>
             </div>
         </div>
     </div>
-    <div class="item fixed-item-more feedback" title="反馈">反馈
-        <div class="layer-content layer">
+    <div class="item feedback" title="反馈">反馈
+        <div class="layer">
             <p>1.联系在线客服</p>
             <p><a class="qq" href="javascript:void(0);" _wpa_plat_qq="800013811">QQ联系</a>800013811</p>
             <br>
@@ -467,5 +535,7 @@
     <a href="#" title="返回顶部" class="item backtop"></a>
 </div>
 <script src="js/fixed-bar.js"></script>
+<script src="js/qrcode.js"></script>
+<script src="js/user.order.detail.stepOther.entry.js"></script>
 </body>
 </html>
