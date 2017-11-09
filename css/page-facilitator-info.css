@@ -161,7 +161,7 @@
 }
 
 .mod-form .input-tips.err:before {
-    background: url(../images/ico-err-7dd50e31ac.png?max_age=31536000) no-repeat
+    background: url(../images/ico-err-7dd50e31ac.png) no-repeat
 }
 
 .mod-form .input-tips.suc {
@@ -169,7 +169,7 @@
 }
 
 .mod-form .input-tips.suc:before {
-    background: url(../images/ico-suc-cbd589170a.png?max_age=31536000) no-repeat
+    background: url(../images/ico-suc-cbd589170a.png) no-repeat
 }
 
 .mod-form .more-tips {
