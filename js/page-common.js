@@ -20,7 +20,7 @@ var common = {
         this.event.navListHover();
     },
     event:{
-        navListHover:function () {
+        navListHover:function () {//分类栏悬浮效果
             $('body').on({
                 'mouseenter ':function () {
                     $(this).addClass('active').siblings().removeClass('active');

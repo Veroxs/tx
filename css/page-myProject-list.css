@@ -190,7 +190,7 @@
     display: inline-block;
     width: 47px;
     height: 54px;
-    background-image: url(../../images/sprite-f980a6bf4a.mod.footer-prom.png);
+    background-image: url(../images/sprite-f980a6bf4a.mod.footer-prom.png);
     background-position: 0 0
 }
 
@@ -199,7 +199,7 @@
     display: inline-block;
     width: 43px;
     height: 47px;
-    background-image: url(../../images/sprite-f980a6bf4a.mod.footer-prom.png);
+    background-image: url(../images/sprite-f980a6bf4a.mod.footer-prom.png);
     background-position: -51px -58px
 }
 
@@ -208,7 +208,7 @@
     display: inline-block;
     width: 47px;
     height: 47px;
-    background-image: url(../../images/sprite-f980a6bf4a.mod.footer-prom.png);
+    background-image: url(../images/sprite-f980a6bf4a.mod.footer-prom.png);
     background-position: -102px 0
 }
 
@@ -219,7 +219,7 @@
 }
 
 .mod-footer-prom.dark-theme .prom-icon.prom-icon-qt:before {
-    background-image: url(../../images/sprite-f980a6bf4a.mod.footer-prom.png);
+    background-image: url(../images/sprite-f980a6bf4a.mod.footer-prom.png);
     background-position: -51px 0
 }
 
@@ -228,12 +228,12 @@
     display: inline-block;
     width: 43px;
     height: 46px;
-    background-image: url(../../images/sprite-f980a6bf4a.mod.footer-prom.png);
+    background-image: url(../images/sprite-f980a6bf4a.mod.footer-prom.png);
     background-position: -98px -58px
 }
 
 .mod-footer-prom.dark-theme .prom-icon.prom-icon-gt:before {
-    background-image: url(../../images/sprite-f980a6bf4a.mod.footer-prom.png);
+    background-image: url(../images/sprite-f980a6bf4a.mod.footer-prom.png);
     background-position: 0 -58px
 }
 
