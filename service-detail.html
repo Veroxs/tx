@@ -301,32 +301,6 @@
     <input type="hidden" name="activeType" value="">
     <input type="hidden" name="skuId" value="">
 </form>
-
-
-<script>
-    function loadScript(src, callback) {
-        var s,
-            r,
-            t;
-        r = false;
-        s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.src = src;
-        s.onload = s.onreadystatechange = function () {
-            //console.log( this.readyState ); //uncomment this line to see which ready states are called.
-            if (!r && (!this.readyState || this.readyState == 'complete')) {
-                r = true;
-                callback();
-            }
-        };
-        t = document.getElementsByTagName('script')[0];
-        t.parentNode.insertBefore(s, t);
-    }
-
-    loadScript(location.protocol + '//' + location.host + '/Httpspxy/index?url=' + encodeURIComponent('http://wpa.b.qq.com/cgi/wpa.php'), function () {
-    });
-</script>
-
 <script src="js/service.detail.js"></script>
 <div class="mod-footer-prom dark-theme">
     <div class="layout">
@@ -400,29 +374,6 @@
 </script>
 <script src="js/common.js"></script>
 
-<script>
-    function loadScript(src, callback) {
-        var s,
-            r,
-            t;
-        r = false;
-        s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.src = src;
-        s.onload = s.onreadystatechange = function () {
-            //console.log( this.readyState ); //uncomment this line to see which ready states are called.
-            if (!r && (!this.readyState || this.readyState == 'complete')) {
-                r = true;
-                callback();
-            }
-        };
-        t = document.getElementsByTagName('script')[0];
-        t.parentNode.insertBefore(s, t);
-    }
-
-    loadScript(location.protocol + '//tajs.qq.com/stats?sId=59932491', function () {
-    });
-</script>
 <script src="js/service.detail.entry.js"></script>
 </body>
 
