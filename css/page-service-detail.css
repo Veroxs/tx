@@ -260,7 +260,7 @@
     content: '';
     width: 4px;
     height: 28px;
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAcCAMAAABxqu66AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAADzUExURRS7qBeuvxqh1hipxxmmzhmoyhmmzRiqxhO8pheswhmnyxmlzxqj0hO9pBqi1Rqj0xetwBirxRO/oBW1shLBnRazthS5qxqg1xuf2hayuBO+oRS6qRevvhaytxaxuhirwxO+ohioyRiswxS7pxO9oxqk0RipyRLCnBLAnjjMqRW3rhevvBS5rBW4rRS8pxO+oxW0szjLqxue2xW4rhug2BawuxW2sBPAnxLBnBLAnxPBnBevvRO9pRmk0RS6qhS4rRLCmyzJpRW3rxTAnxa0tCnHpBue3Bug2UWv4BewuxW1sxW2sTmp4Ra0tT2s4BW3sEWt48YM6x0AAAB+SURBVAjXBcGDAQMBAASwe9t2bdu295+mCfrnfR32rLrDcW4vEJrTGpRuaIJflXJAkVfgRuig3dpE+Da2LqznYYh3z5ogcU4PpEHiYHlPAxBxcwxBJ2IYmaCD4owCmDzFgRWZCiSaFSGXJRqqJq/hkaoG/+qRuAz8EX6vz+0PQGEOeohwrQkAAAAASUVORK5CYII=');
+    background-image: url('../images/mod-head-s.png');
     background-repeat: no-repeat;
     top: 4px;
     left: 0
@@ -326,7 +326,7 @@
 
 .service-detail-banner {
     border: 1px solid #e2e2e2;
-    background: #fff url(img/service-detail-banner-bg-1b37ce5d75.png) no-repeat bottom;
+    background: #fff url(../images/service-detail-banner-bg.png) no-repeat bottom;
     font-size: 0;
     margin-bottom: 24px
 }

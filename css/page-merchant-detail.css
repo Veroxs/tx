@@ -189,7 +189,7 @@
     content: '';
     width: 4px;
     height: 28px;
-    background: url('../other/+qRuAz8EX6vz+0PQGEOeohwrQkAAAAASUVORK5CYII=') no-repeat;
+    background: url('../images/mod-head-s.png') no-repeat;
     top: 4px;
     left: 0
 }
@@ -916,6 +916,6 @@
     height: 20px;
     display: inline-block;
     vertical-align: middle;
-    background-image: url('../other/YEEOAWFoRtAhmIvZW1tgJWpqzIPLGIao+daajaB3MA3OIwwdg1nZEk3n2RuYAtucDymf0psZeWns4UgHl8AouKamBMNgUyY+IL8CDADc1IJy6YwNqQAAAABJRU5ErkJggg==');
+    background-image: url('../images/icon-bao.png');
     background-repeat: no-repeat
 }

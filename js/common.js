@@ -2538,7 +2538,7 @@
                     if (g.open(b.type, b.url, b.async, b.username, b.password), b.xhrFields) for (f in b.xhrFields) g[f] = b.xhrFields[f];
                     b.mimeType && g.overrideMimeType && g.overrideMimeType(b.mimeType), b.crossDomain || d["X-Requested-With"] || (d["X-Requested-With"] = "XMLHttpRequest");
                     for (f in d) void 0 !== d[f] && g.setRequestHeader(f, d[f] + "");
-                    g.send(b.hasContent && b.data || null), c = function (a, d) {
+                    /*g.send(b.hasContent && b.data || null), c = function (a, d) {
                         var f, i, j;
                         if (c && (d || 4 === g.readyState)) if (delete ec[h], c = void 0, g.onreadystatechange = n.noop, d) 4 !== g.readyState && g.abort(); else {
                             j = {}, f = g.status, "string" == typeof g.responseText && (j.text = g.responseText);
@@ -2550,7 +2550,7 @@
                             f || !b.isLocal || b.crossDomain ? 1223 === f && (f = 204) : f = j.text ? 200 : 404
                         }
                         j && e(f, i, j, g.getAllResponseHeaders())
-                    }, b.async ? 4 === g.readyState ? a.setTimeout(c) : g.onreadystatechange = ec[h] = c : c()
+                    }, */b.async ? 4 === g.readyState ? a.setTimeout(c) : g.onreadystatechange = ec[h] = c : c()
                 }, abort: function () {
                     c && c(void 0, !0)
                 }
@@ -3483,8 +3483,8 @@
             window.$ = $;
             setZcFrom();
             setZcTag();
-            headerController.getUserInfo();
-            _utils2["default"].checkLogin(function (hasLogin) {
+            //headerController.getUserInfo();
+            /*_utils2["default"].checkLogin(function (hasLogin) {
                 if (hasLogin) {
                     headerController.renderLoginQQ()
                 }
@@ -3494,7 +3494,7 @@
             } else {
                 nav.init({alwaysshow: false})
             }
-            (0, _valueStat.reportInit)({})
+            (0, _valueStat.reportInit)({})*/
         };
         init();
 
@@ -3549,7 +3549,7 @@
                 this.headerModel = headerModel
             }
 
-            _createClass(HeaderController, [{
+            /*_createClass(HeaderController, [{
                 key: "renderLoginQQ", value: function renderLoginQQ() {
                     this.headerView.renderLoginQQ(_utils2["default"].getUin())
                 }
@@ -3577,7 +3577,7 @@
                         _this3.headerView.renderCateInfo(cateInfo)
                     })
                 }
-            }]);
+            }]);*/
             return HeaderController
         }();
         exports["default"] = HeaderController;
@@ -3616,16 +3616,16 @@
             }
         }
 
-        var hostname = location.hostname;
-        var USER_INFO_URL = hostname === "open.qq.com" ? "//c.qq.com/user/get_iscorp" : "/user/get_iscorp";
-        var UNREAD_NUM_URL = hostname === "open.qq.com" ? "//c.qq.com/sysmsg/getunreadcount" : "/sysmsg/getunreadcount";
-        var CATE_INFO_URL = "/portal/navigatecate";
+        //var hostname = location.hostname;
+        //var USER_INFO_URL = hostname === "open.qq.com" ? "//c.qq.com/user/get_iscorp" : "/user/get_iscorp";
+        //var UNREAD_NUM_URL = hostname === "open.qq.com" ? "//c.qq.com/sysmsg/getunreadcount" : "/sysmsg/getunreadcount";
+        //var CATE_INFO_URL = "/portal/navigatecate";
         var HeaderModel = function () {
             function HeaderModel() {
                 _classCallCheck(this, HeaderModel)
             }
 
-            _createClass(HeaderModel, [{
+            /*_createClass(HeaderModel, [{
                 key: "getUserInfo", value: function getUserInfo(callback) {
                     _network2["default"].request({
                         url: USER_INFO_URL,
@@ -3670,7 +3670,7 @@
                         }
                     })
                 }
-            }]);
+            }]);*/
             return HeaderModel
         }();
         exports["default"] = HeaderModel;
@@ -3770,7 +3770,8 @@
                     $(document).on("click", ".search-form .close", function () {
                         f.animate({top: oldTop}, 100)
                     });
-                    $(document).on("click", ".jmod_search_btn", function (e) {
+                    /*顶部搜索功能*/
+                    /*$(document).on("click", ".jmod_search_btn", function (e) {
                         var $target = $(e.currentTarget);
                         if (!$.trim($target.parent().find(".jmod_search").val())) {
                             return false
@@ -3789,7 +3790,7 @@
                             var win = window.open(hostname + "/search/s?search_query=" + $.trim($target.val()), "_blank");
                             win.focus()
                         }
-                    })
+                    })*/
                 }
             }, {
                 key: "bindLogout", value: function bindLogout() {
@@ -6603,7 +6604,7 @@
                 }, 500);
                 return
             }
-            $(".jmod-wpa-qq").off("click").on("click", function (e) {
+            /*$(".jmod-wpa-qq").off("click").on("click", function (e) {
                 if (window.BizQQWPA) {
                     return
                 }
@@ -6635,7 +6636,7 @@
                         }
                     }
                 })
-            })
+            })*/
         }
 
         function addQQConsultStat() {

@@ -1765,12 +1765,12 @@ select.select {
 }
 
 .ui-toast-ico.suc {
-    background-image: url('../other/YAAAAAASUVORK5CYII=');
+    background-image: url('../images/suc-icon.png');
     background-repeat: no-repeat
 }
 
 .ui-toast-ico.warn {
-    background-image: url('../other/sAAAAABJRU5ErkJggg==');
+    background-image: url('../images/warn-icon.png');
     background-repeat: no-repeat
 }
 
@@ -1779,7 +1779,7 @@ select.select {
 }
 
 .ui-toast-ico.warn-bw {
-    background-image: url('../other/0SFUf83WzJ5eXz1MVQAAAAASUVORK5CYII=');
+    background-image: url('../images/warn-bw.png');
     background-repeat: no-repeat
 }
 
